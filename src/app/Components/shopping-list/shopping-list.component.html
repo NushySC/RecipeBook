@@ -1,5 +1,16 @@
 <div class="row">
   <div class="col-xs-10">
-    <app-shopping-list></app-shopping-list>
+    <app-shopping-edit></app-shopping-edit>
+    <hr />
+    <ul class="list-group">
+      <li
+        class=""
+        class="list-group-item"
+        role="button"
+        *ngFor="let ingredient of ingredients"
+      >
+        <a href="">{{ ingredient.amount }} of {{ ingredient.name }} </a>
+      </li>
+    </ul>
   </div>
 </div>
